@@ -1,0 +1,133 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 9rem;
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+}
+
+section header,
+section main,
+section footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+section main {
+  margin: 2rem 0;
+}
+
+main .inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+}
+
+main article {
+  padding: 1.5rem;
+  height: 19rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Merriweather', serif; */
+  font-weight: 700;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: .75rem;
+}
+
+main p {
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+main .actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ededed;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 0px #48c774;
+  border: 1px solid #3db968;
+  border-radius: 5px;
+  margin-right: 1rem;
+  background: repeating-linear-gradient(-45deg,#48c774, #48c774 5px, #3db968 5px, #3db968 10px);
+  cursor: pointer;
+}
+
+button svg {
+  height: 1.125rem;
+  width: 1.125rem;
+  margin-right: .5rem;
+}
+
+button:last-child {
+  margin-right: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+::selection {
+  color: #fff;
+  background: #48c774;
+}
